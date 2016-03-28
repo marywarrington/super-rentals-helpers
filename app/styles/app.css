@@ -1,0 +1,8 @@
+.jumbotron {
+  background-color: gray;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTch8juKNN1BCw43jLzOZUOOkZFcYZpi9PMw_8nT12lrB6_k2UV');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: lightgray;
+  height: 300px;
+}

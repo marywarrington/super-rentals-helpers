@@ -6,12 +6,12 @@ export default Ember.Component.extend({
     announcementFormShow() {
       this.set('addNewAnnouncement', true);
     },
-    save4() {
+    save() {
       var params = {
         message: this.get('message'),
       };
       this.set('addNewAnnouncement', false);
-      this.sendAction('save5', params);
+      this.sendAction('save', params);
     }
   }
 });
