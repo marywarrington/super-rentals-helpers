@@ -2,10 +2,11 @@
 <li>
   {{rental.owner}}'s {{rental.type}} in {{rental.city}}
   {{#if isImageShowing}}
-    <p><img src={{rental.image}} alt={{rental.type}} {{action: 'imageHide'}}></p>
+    <p><img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}></p>
   {{else}}
     <button {{action 'imageShow'}}>Show image</button>
   {{/if}}
+    <button {{action 'delete' rental}}>Delete</button>
 </li>
 
 
@@ -15,3 +16,6 @@
 <!-- we added an action helper to the template and an action handler in our source file. by default the action helper listens for click events. if we place it on the button the action we call for will automatically trigger when the user clicks the button -->
 
 <!-- to hide the image we added an action helper with the function imagehide into the image itself, so that when the user clicks on the image it will disappear. we have to go to the source file and add that to actions so that it will set the imageshowing state to false. -->
+
+
+<!-- we added an action helper called delete and attached it to a button. next, we need to go into the source file and add the function in the actions. -->
