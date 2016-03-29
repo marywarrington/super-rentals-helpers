@@ -9,6 +9,9 @@ export default Ember.Component.extend({
     imageHide: function() {
       this.set('isImageShowing', false);
     },
+    update(rental, params){
+      this.sendAction('update', rental, params);
+    },
     delete(rental) {
       if (confirm('Are you sure you want to delete this rental?')) {
         this.sendAction('destroyRental', rental);
@@ -30,4 +33,4 @@ export default Ember.Component.extend({
 
 //the component can't delete the object itself; it sends a notification of intent by calling the this.sendAction function.  In the function's argument we provide the name of the function on the template and route handler we want to activate, and the specific rental we want that to happen to.
 
-// ember follows the paradigm, data down, actions up.  data is passed downwards from the route, to the template, and into the component, actions get passed back up in a similar fashion.  So the command is sent up to the template and it must know how to handle that.  so we will call it on the same line that we use to call that component. 
+// ember follows the paradigm, data down, actions up.  data is passed downwards from the route, to the template, and into the component, actions get passed back up in a similar fashion.  So the command is sent up to the template and it must know how to handle that.  so we will call it on the same line that we use to call that component.
