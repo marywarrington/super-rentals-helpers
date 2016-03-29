@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('announcements');
+  this.route('rental', {path: '/rental/:rental_id'});
 }); //this is the route handler
 
 export default Router; //makes the Router constant available to other parts of the application, similar to the way we've exported modules previously
