@@ -13,8 +13,11 @@
 <ul>
   {{#each model.cities as |city|}}
     <li>{{city.name}}</li>
+    <button {{action 'deleteCity' city}}>Delete</button>
   {{/each}}
 </ul>
+
+{{new-city save5="save6"}}
 
 <hr>
 

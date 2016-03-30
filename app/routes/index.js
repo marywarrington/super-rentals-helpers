@@ -18,12 +18,19 @@ export default Ember.Route.extend({
       var newRental = this.store.createRecord('rental', params);
       newRental.save();
       this.transitionTo('index');
+    },
+    save6(params) {
+      var newCity = this.store.createRecord('city', params);
+      newCity.save();
+      this.transitionTo('index');
+    },
+    deleteCity(city) {
+      if (confirm('You sure you want to delete this city?')) {
+        city.destroyRecord();
+        this.transitionTo('index');
+      }
     }
-    // save6(params) {
-    //   var newAnnouncement = this.store.createRecord('announcement', params);
-    //   newAnnouncement.save();
-    //   this.transitionTo('index');
-    // }
+
   }
 });
 
