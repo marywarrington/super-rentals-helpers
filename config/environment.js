@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'super-rentals',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://ep-rentals.firebaseio.com/', //this is where you put your own firebase link. 
+    firebase: 'https://epicodus-rental-app.firebaseio.com/', //this is where you put your own firebase link. 
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
