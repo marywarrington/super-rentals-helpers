@@ -14,11 +14,11 @@ export default Ember.Route.extend({
     return this.store.findAll('announcement');
   },
   actions: {
-    save3(params) {
-      var newRental = this.store.createRecord('rental', params);
-      newRental.save();
-      this.transitionTo('index');
-    },
+    // save3(params) {
+    //   var newRental = this.store.createRecord('rental', params);
+    //   newRental.save();
+    //   this.transitionTo('index');
+    // },
     save6(params) {
       var newCity = this.store.createRecord('city', params);
       newCity.save();
@@ -40,7 +40,7 @@ export default Ember.Route.extend({
 // okay, so I'm writing about this in here because I don't know how to comment out the hbs file.  just like angular we are running a for each loop in the html.  okay, cool.  Whatever.  This is an example of what we're doing. Maybe this is the new norm?
 // <ul>
 //   {{#each model as |rental|}}
-//      <li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}</li>
+//      <li>{{rental.owner}}'s {{rental.type}} in {{rental.city.name}}</li>
 //   {{/each}}
 // </ul>
 //we are looping through the model hook and we are labeling each object in that mofo 'rental' and then we are calling the object properties and listing them out.
