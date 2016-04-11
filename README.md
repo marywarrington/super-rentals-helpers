@@ -1,7 +1,9 @@
-# Super-rentals
+# Super Rentals with Helpers
+#### _ Week 4 of Epicodus Javascript, 4.4.2016_
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+### By _**Mary Warrington**_
+
+This project is built in Ember and expands upon a previous "super rentals" project by implementing helpers. Users can see/add/delete cities, rentals in those cities, and depending on the price or number of rentals in the city, a helper will show various graphics in the UI.
 
 ## Prerequisites
 
@@ -10,44 +12,31 @@ You will need the following things properly installed on your computer.
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
 * [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
+* [Ember CLI](http://www.ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone` [this repository](https://github.com/marywarrington/super-rentals-helps.git)
 * change into the new directory
 * `npm install`
 * `bower install`
 
 ## Running / Development
 
-* `ember server`
+* `ember s`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+## Known Bugs
 
-Make use of the many generators for code, try `ember help generate` for more details
+* No known bugs.
 
-### Running Tests
+## Contact
 
-* `ember test`
-* `ember test --server`
+_If you have any questions, concerns, or feedback, please contact the author through_ [gitHub](https://github.com/marywarrington/).
 
-### Building
+### License
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+MIT License.
 
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+Copyright (c) 2016 **_Mary Warrington_**
